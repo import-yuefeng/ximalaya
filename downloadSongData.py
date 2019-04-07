@@ -21,7 +21,7 @@ for item in content:
             time.sleep(1)
     except:
         print("[-] 出错!, 最后一个下载的内容为%s")
-
+        exit(1)
     else:
         print("\r已下载-> ".format(item["musicIndex"])+str(item["musicIndex"]), end="")
 
